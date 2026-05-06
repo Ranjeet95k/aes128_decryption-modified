@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.03284",
+   "Default View_TopLeft":"-119,2",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_btnL -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_btnR -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port port-id_led_pass -pg 1 -lvl 4 -x 790 -y 50 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_clk_fpga -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace portBus leds -pg 1 -lvl 4 -x 790 -y 20 -defaultsOSRD
+preplace inst AES_ILA_VIO_Verify_0 -pg 1 -lvl 2 -x 410 -y 170 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 680 -y 180 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 1 -x 130 -y 260 -defaultsOSRD
+preplace netloc AES_ILA_VIO_Verify_0_dbg_aes_result 1 2 1 N 130
+preplace netloc AES_ILA_VIO_Verify_0_dbg_expected_out 1 2 1 N 150
+preplace netloc AES_ILA_VIO_Verify_0_dbg_cipher_text 1 2 1 N 170
+preplace netloc AES_ILA_VIO_Verify_0_dbg_key 1 2 1 N 190
+preplace netloc AES_ILA_VIO_Verify_0_dbg_selected_byte 1 2 1 N 210
+preplace netloc AES_ILA_VIO_Verify_0_dbg_byte_sel 1 2 1 N 230
+preplace netloc AES_ILA_VIO_Verify_0_dbg_pass 1 2 1 N 250
+preplace netloc vio_0_probe_out0 1 1 1 230 190n
+preplace netloc vio_0_probe_out1 1 1 1 240 210n
+preplace netloc vio_0_probe_out2 1 1 1 250 230n
+preplace netloc btnL_0_1 1 0 2 30J 170 NJ
+preplace netloc btnR_0_1 1 0 2 NJ 150 NJ
+preplace netloc AES_ILA_VIO_Verify_0_led_pass 1 2 2 580J 50 NJ
+preplace netloc AES_ILA_VIO_Verify_0_leds 1 2 2 570J 20 NJ
+preplace netloc reset_0_1 1 0 2 NJ 120 230J
+preplace netloc clk_fpga_0_1 1 0 3 20 110 230 30 590
+levelinfo -pg 1 0 130 410 680 790
+pagesize -pg 1 -db -bbox -sgen -100 0 900 340
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

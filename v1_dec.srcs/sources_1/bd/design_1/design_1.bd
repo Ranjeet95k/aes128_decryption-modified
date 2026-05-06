@@ -1,0 +1,283 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5124383F07722556",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../v1_dec.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "AES_ILA_VIO_Verify_0": "",
+      "ila_0": "",
+      "vio_0": ""
+    },
+    "ports": {
+      "btnL": {
+        "direction": "I"
+      },
+      "btnR": {
+        "direction": "I"
+      },
+      "led_pass": {
+        "direction": "O"
+      },
+      "leds": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_fpga": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "AES_ILA_VIO_Verify_0": {
+        "vlnv": "xilinx.com:module_ref:AES_ILA_VIO_Verify:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_AES_ILA_VIO_Verify_0_0",
+        "xci_path": "ip\\design_1_AES_ILA_VIO_Verify_0_0\\design_1_AES_ILA_VIO_Verify_0_0.xci",
+        "inst_hier_path": "AES_ILA_VIO_Verify_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AES_ILA_VIO_Verify",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_fpga": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "btnR": {
+            "direction": "I"
+          },
+          "btnL": {
+            "direction": "I"
+          },
+          "vio_reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "vio_next": {
+            "direction": "I"
+          },
+          "vio_prev": {
+            "direction": "I"
+          },
+          "leds": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "led_pass": {
+            "direction": "O"
+          },
+          "dbg_aes_result": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          },
+          "dbg_expected_out": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          },
+          "dbg_cipher_text": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          },
+          "dbg_key": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          },
+          "dbg_selected_byte": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "dbg_byte_sel": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "dbg_pass": {
+            "direction": "O"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "18",
+        "xci_name": "design_1_ila_0_0",
+        "xci_path": "ip\\design_1_ila_0_0\\design_1_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "7"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "128"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "128"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "128"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "128"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "27",
+        "xci_name": "design_1_vio_0_0",
+        "xci_path": "ip\\design_1_vio_0_0\\design_1_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AES_ILA_VIO_Verify_0_dbg_aes_result": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_aes_result",
+          "ila_0/probe0"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_dbg_byte_sel": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_byte_sel",
+          "ila_0/probe5"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_dbg_cipher_text": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_cipher_text",
+          "ila_0/probe2"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_dbg_expected_out": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_expected_out",
+          "ila_0/probe1"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_dbg_key": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_key",
+          "ila_0/probe3"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_dbg_pass": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_pass",
+          "ila_0/probe6"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_dbg_selected_byte": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/dbg_selected_byte",
+          "ila_0/probe4"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_led_pass": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/led_pass",
+          "led_pass"
+        ]
+      },
+      "AES_ILA_VIO_Verify_0_leds": {
+        "ports": [
+          "AES_ILA_VIO_Verify_0/leds",
+          "leds"
+        ]
+      },
+      "btnL_0_1": {
+        "ports": [
+          "btnL",
+          "AES_ILA_VIO_Verify_0/btnL"
+        ]
+      },
+      "btnR_0_1": {
+        "ports": [
+          "btnR",
+          "AES_ILA_VIO_Verify_0/btnR"
+        ]
+      },
+      "clk_fpga_0_1": {
+        "ports": [
+          "clk_fpga",
+          "AES_ILA_VIO_Verify_0/clk_fpga",
+          "vio_0/clk",
+          "ila_0/clk"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset",
+          "AES_ILA_VIO_Verify_0/reset"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "AES_ILA_VIO_Verify_0/vio_reset"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "AES_ILA_VIO_Verify_0/vio_next"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "AES_ILA_VIO_Verify_0/vio_prev"
+        ]
+      }
+    }
+  }
+}

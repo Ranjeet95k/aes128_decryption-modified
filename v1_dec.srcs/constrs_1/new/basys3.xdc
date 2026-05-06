@@ -9,7 +9,7 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 
 ## AES verification core clock.
 ## The wrapper divides the 100 MHz board clock by 8 and routes it through BUFG.
-create_generated_clock -name aes_clk -source [get_ports clk_fpga] -divide_by 8 [get_pins aes_clk_bufg/O]
+create_generated_clock -name aes_clk -source [get_ports clk_fpga] -divide_by 8 [get_pins -hierarchical *aes_clk_bufg/O]
 
 ## Push buttons
 ## BTNC / reset, active HIGH
