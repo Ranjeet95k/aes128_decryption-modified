@@ -1,0 +1,67 @@
+# Vivado generated directories
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.gen/
+*.ip_user_files/
+
+# Vivado generated project artifacts
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+*.backup.vdi
+*.vdi
+*.pb
+*.wdb
+*.wcfg
+*.rpt
+*.rpx
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.mcs
+*.prm
+
+# XSim generated files
+xsim.dir/
+xsim.ini
+xsim.ini.bak
+xelab.*
+xvlog.*
+xelab.pb
+xvlog.pb
+webtalk*.jou
+webtalk*.log
+
+# Run status and generated helper files
+.Vivado_*.queue.rst
+*.rst
+runme.bat
+runme.sh
+runme.log
+ISEWrap.js
+ISEWrap.sh
+gen_run.xml
+clockInfo.txt
+htr.txt
+tight_setup_hold_pins.txt
+project.wdf
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+*.swp
+*.tmp
+~$*
+
+# Keep these tracked:
+# - v1_dec.xpr
+# - v1_dec.srcs/**/*.v
+# - v1_dec.srcs/**/*.sv
+# - v1_dec.srcs/**/*.xdc
+# - v1_dec.srcs/**/*.xci
