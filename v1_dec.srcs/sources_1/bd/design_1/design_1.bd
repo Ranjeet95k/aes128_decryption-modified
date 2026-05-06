@@ -249,9 +249,9 @@
       "clk_fpga_0_1": {
         "ports": [
           "clk_fpga",
-          "AES_ILA_VIO_Verify_0/clk_fpga",
           "vio_0/clk",
-          "ila_0/clk"
+          "ila_0/clk",
+          "AES_ILA_VIO_Verify_0/clk_fpga"
         ]
       },
       "reset_0_1": {

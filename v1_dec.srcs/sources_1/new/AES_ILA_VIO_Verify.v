@@ -20,7 +20,7 @@ module AES_ILA_VIO_Verify(
 );
 
     // Test vector from tb_aes.v.
-    localparam [127:0] CIPHER_TEXT  = 128'hc8f7d43cd98f2e5ae110010771705871;
+    localparam [127:0] CIPHER_TEXT  = 128'hc8f7d43cd98f2e5ae110010771705845;
     localparam [127:0] AES_KEY      = 128'h000102030405060708090a0b0c0d0e0f;
     localparam [127:0] EXPECTED_OUT = 128'h4142434445464748494a4b4c4d4e4f52;
 
